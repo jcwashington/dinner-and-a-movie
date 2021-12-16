@@ -9,6 +9,7 @@ var lat;
 var lon;
 var userSearchHistory = [];
 
+
 // local storage
 var storedUserSearchHistory = localStorage.getItem('user-search-history');
 if (storedUserSearchHistory) {
@@ -21,6 +22,8 @@ function createHistoryButtons() {
     userSearchButtons.innerHTML = '';
     for (var i = 0; i < userSearchHistory.length; i++) {
         var historyButton = document.createElement("button");
+        historyButton.classList.add('btn');
+        historyButton.classList.add("history-btn");
         historyButton.textContent = userSearchHistory[i];
         historyButton.addEventListener("click", getSearchButtonZipCode);
         historyButton.setAttribute("style", "margin: 5px; padding: 3px");
