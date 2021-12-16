@@ -74,7 +74,7 @@ getNowPlaying();
 
 function getNowPlaying () {
   var settings = {
-    "url": "https://thingproxy.freeboard.io/fetch/https://api.themoviedb.org/3/movie/now_playing?api_key=e747c9d40c6c39d7c1be526131c0fe31&language=en-US&region=US",
+    "url": "https://api.themoviedb.org/3/movie/now_playing?api_key=e747c9d40c6c39d7c1be526131c0fe31&language=en-US&region=US",
     "method": "GET",
     "timeout": 0,
   };
